@@ -1,0 +1,28 @@
+body{
+    background-image: radial-gradient(
+        rgb(17,17,17, 0.9),
+        rgb(30,30,30, 0.9)
+    ), url(./images/senai.png);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+.animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    animation: bounce 2s infinite;
+    color: lightblue;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-100%);
+    }
+}
