@@ -4,7 +4,7 @@ function redirectToIndex2() {
 
 function rejectAnswer() {
     var button = document.getElementsByClassName("button")[1];
-    button.style.position = "absolute";
+    button.style.position = "relative";
     setInterval(function() {
         var position = button.style.left;
         var newPosition = parseInt(position) + 10;

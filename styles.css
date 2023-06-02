@@ -3,6 +3,7 @@ body{
         rgb(17,17,17, 0.9),
         rgb(30,30,30, 0.9)
     ), url(./images/senai.png);
+    background-size: cover;
     text-align: center;
     font-family: Arial, sans-serif;
     
@@ -14,8 +15,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 48px;
-    animation: bounce 2s infinite;
-    color: lightblue;
+    animation: bounce 2s infinite, rainbow 4s infinite;
 }
 
 @keyframes bounce {
@@ -26,3 +26,13 @@ body{
         transform: translate(-50%, -50%) translateY(-100%);
     }
 }
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
